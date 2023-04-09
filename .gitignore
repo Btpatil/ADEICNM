@@ -7,8 +7,8 @@
 
 # testing
 /coverage
-.scss
-.css.map
+style.scss
+style.css.map
 
 # production
 /build
