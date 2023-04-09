@@ -1,0 +1,276 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700");
+.mapContainer {
+  height: 100vh;
+  width: 100%;
+}
+
+.mapContainer .map {
+  height: calc(100% - 70px);
+  width: 100%;
+}
+
+.mapContainer .accordion {
+  max-width: 100vw;
+  width: 450px;
+  margin-bottom: 10px;
+}
+
+.mapContainer .accordion input {
+  display: none;
+}
+
+.mapContainer .box {
+  position: relative;
+  background: white;
+  height: 64px;
+  -webkit-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+}
+
+.mapContainer .box::before {
+  position: absolute;
+  display: block;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  pointer-events: none;
+  -webkit-box-shadow: 0 -1px 0 #e5e5e5, 0 0 2px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
+          box-shadow: 0 -1px 0 #e5e5e5, 0 0 2px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
+}
+
+.mapContainer header.box {
+  background: #6fa8ad;
+  z-index: 100;
+  cursor: initial;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  -webkit-box-shadow: 0 -1px 0 #e5e5e5, 0 0 2px -2px rgba(0, 0, 0, 0.12), 0 2px 4px -4px rgba(0, 0, 0, 0.24);
+          box-shadow: 0 -1px 0 #e5e5e5, 0 0 2px -2px rgba(0, 0, 0, 0.12), 0 2px 4px -4px rgba(0, 0, 0, 0.24);
+}
+
+.mapContainer header .box-title {
+  margin: 0;
+  font-weight: normal;
+  font-size: 16pt;
+  color: white;
+  cursor: initial;
+}
+
+.mapContainer .box-title {
+  width: calc(100% - 40px);
+  line-height: 64px;
+  font-size: large;
+  padding: 0 20px;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.mapContainer .box-content {
+  width: calc(100%);
+  padding: 30px 5px;
+  font-size: 18pt;
+  color: rgba(0, 0, 0, 0.54);
+  display: none;
+}
+
+.mapContainer .box-content img {
+  width: 100%;
+}
+
+.mapContainer .box-close {
+  position: absolute;
+  height: 64px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+  display: none;
+}
+
+.mapContainer input:checked + .box {
+  height: auto;
+  margin: 16px 0;
+  -webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.16), 0 6px 12px rgba(0, 0, 0, 0.32);
+          box-shadow: 0 0 6px rgba(0, 0, 0, 0.16), 0 6px 12px rgba(0, 0, 0, 0.32);
+}
+
+.mapContainer input:checked + .box .box-title {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.18);
+}
+
+.mapContainer input:checked + .box .box-content,
+.mapContainer input:checked + .box .box-close {
+  display: inline-block;
+}
+
+.mapContainer .arrows section .box-title {
+  padding-left: 44px;
+  width: calc(100% - 64px);
+}
+
+.mapContainer .arrows section .box-title:before {
+  position: absolute;
+  display: block;
+  content: '\203a';
+  font-size: 18pt;
+  left: 20px;
+  top: -2px;
+  -webkit-transition: -webkit-transform .15s ease-in-out;
+  transition: -webkit-transform .15s ease-in-out;
+  transition: transform .15s ease-in-out;
+  transition: transform .15s ease-in-out, -webkit-transform .15s ease-in-out;
+  color: rgba(0, 0, 0, 0.54);
+}
+
+.mapContainer input:checked + section.box .box-title:before {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.mapContainer .DirectButton {
+  background-color: #a2c5c8;
+  padding: 12px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.mapContainer .DirectButton:hover {
+  background-color: #6fa8ad;
+  color: white;
+}
+
+.mapContainer .ClearButton {
+  position: absolute;
+  z-index: 1000;
+  background-color: white;
+  border: 1px solid black;
+  padding: 12px;
+  outline: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+  right: 25%;
+  top: 80px;
+}
+
+.mapContainer .ClearButton:hover {
+  background-color: #f4e7d6;
+}
+
+.mapContainer .loading {
+  position: absolute;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  left: 0;
+  right: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #00000043;
+  z-index: 999;
+}
+
+.mapContainer .loading .wave {
+  width: 5px;
+  height: 100px;
+  background: linear-gradient(45deg, #fccb8e, #b29571);
+  margin: 10px;
+  -webkit-animation: wave 1s linear infinite;
+          animation: wave 1s linear infinite;
+  border-radius: 20px;
+}
+
+.mapContainer .loading .wave:nth-child(2) {
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
+}
+
+.mapContainer .loading .wave:nth-child(3) {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+
+.mapContainer .loading .wave:nth-child(4) {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+}
+
+.mapContainer .loading .wave:nth-child(5) {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
+
+.mapContainer .loading .wave:nth-child(6) {
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+
+.mapContainer .loading .wave:nth-child(7) {
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+}
+
+.mapContainer .loading .wave:nth-child(8) {
+  -webkit-animation-delay: 0.7s;
+          animation-delay: 0.7s;
+}
+
+.mapContainer .loading .wave:nth-child(9) {
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
+}
+
+.mapContainer .loading .wave:nth-child(10) {
+  -webkit-animation-delay: 0.9s;
+          animation-delay: 0.9s;
+}
+
+@-webkit-keyframes wave {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  50% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+}
+
+@keyframes wave {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  50% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+}
+/*# sourceMappingURL=style.css.map */

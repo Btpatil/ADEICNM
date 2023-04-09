@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.direction {
+    height: fit-content;
+    position: relative;
+    width: 98%;
+    padding: 10px 0;
+    margin: auto auto;
+
+    .from,
+    .to {
+        position: relative;
+
+        .fromsearch,
+        .tosearch {
+            height: 100%;
+            width: 100%;
+            padding: 12px;
+            outline: none;
+            // border: 1px solid black;
+            border: none;
+            border-radius: 5px;
+            background-color: rgb(228, 237, 237);
+            font-size: 1rem;
+            transition: 0.3s;
+            margin-bottom: 10px;
+
+            &:focus {
+                transition: ease-in-out 0.3s;
+                background-color: rgb(255, 255, 255);
+                border: 1px solid rgb(231, 231, 231);
+                box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+            }
+        }
+
+        .list {
+            display: none;
+            transition: 0.3s;
+            position: absolute;
+            width: 100%;
+            // z-index: 10000;
+            top: calc(100% - 10px);
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+            list-style: none;
+            z-index: 100;
+            li {
+                cursor: pointer;
+                border: 1px solid #ddd;
+                margin-top: -1px;
+                /* Prevent double borders */
+                background-color: white;
+                padding: 12px;
+                text-decoration: none;
+                font-size: 1rem;
+                color: black;
+
+                &:hover {
+                    background-color: rgb(228, 237, 237);
+                    transition: 0.3s;
+                }
+            }
+        }
+    }
+
+    .DirectButton {
+        background-color: bisque;
+        padding: 12px;
+        outline: none;
+        border: none;
+        border-radius: 5px;
+        font-size: 1rem;
+        transition: 0.3s;
+        cursor: pointer;
+
+        &:hover {
+            background-color: rgb(252, 218, 177);
+        }
+    }
+}

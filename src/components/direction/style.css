@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.direction {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  position: relative;
+  width: 98%;
+  padding: 10px 0;
+  margin: auto auto;
+}
+
+.direction .from,
+.direction .to {
+  position: relative;
+}
+
+.direction .from .fromsearch,
+.direction .from .tosearch,
+.direction .to .fromsearch,
+.direction .to .tosearch {
+  height: 100%;
+  width: 100%;
+  padding: 12px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  background-color: #e4eded;
+  font-size: 1rem;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  margin-bottom: 10px;
+}
+
+.direction .from .fromsearch:focus,
+.direction .from .tosearch:focus,
+.direction .to .fromsearch:focus,
+.direction .to .tosearch:focus {
+  -webkit-transition: ease-in-out 0.3s;
+  transition: ease-in-out 0.3s;
+  background-color: white;
+  border: 1px solid #e7e7e7;
+  -webkit-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.direction .from .list,
+.direction .to .list {
+  display: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  position: absolute;
+  width: 100%;
+  top: calc(100% - 10px);
+  -webkit-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  list-style: none;
+  z-index: 100;
+}
+
+.direction .from .list li,
+.direction .to .list li {
+  cursor: pointer;
+  border: 1px solid #ddd;
+  margin-top: -1px;
+  /* Prevent double borders */
+  background-color: white;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 1rem;
+  color: black;
+}
+
+.direction .from .list li:hover,
+.direction .to .list li:hover {
+  background-color: #e4eded;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.direction .DirectButton {
+  background-color: bisque;
+  padding: 12px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.direction .DirectButton:hover {
+  background-color: #fcdab1;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,256 @@
+{
+    "buldings": [
+        {
+            "id": 1,
+            "name": "Bulding1 (Civil, CSE, Basic Departments)",
+            "floors": [
+                {
+                    "id": "ground1",
+                    "floor": "ground",
+                    "name": "xuz",
+                    "dept": "Civil Deoartment",
+                    "floormap": "url",
+                    "images": [
+                        {
+                            "img" : "/img/adcet/Civil/civil/2.jpg",
+                            "desc" : "Department of Civil Engineering"
+                        }
+                    ]
+                },
+                {
+                    "id": "first1",
+                    "floor": "first",
+                    "name": "xuz",
+                    "dept": "CSE Deoartment",
+                    "floormap": "url",
+                    "images": [
+                        {
+                            "img" : "/img/adcet/Civil/cse/1.jpg",
+                            "desc" : "CSE Department"
+                        },
+                        {
+                            "img" : "/img/adcet/Civil/cse/2.jpg",
+                            "desc" : "Right side of the floor"
+                        },
+                        {
+                            "img" : "/img/adcet/Civil/cse/3.jpg",
+                            "desc" : "left side of the floor"
+                        },
+                        {
+                            "img" : "/img/adcet/Civil/cse/csedept.jpg",
+                            "ts": "yes",
+                            "desc" : "CSE Department"
+                        }
+                    ]
+                },
+                {
+                    "id": "second1",
+                    "floor": "second",
+                    "name": "xuz",
+                    "dept": "Basic Science Deoartment",
+                    "floormap": "url",
+                    "images": [
+                        {
+                            "img" : "/img/adcet/Civil/basic/1.jpg",
+                            "desc" : "Right side of the floor"
+                        },
+                        {
+                            "img" : "/img/adcet/Civil/basic/2.jpg",
+                            "desc" : ""
+                        },
+                        {
+                            "img" : "/img/adcet/Civil/basic/basicdept.jpg",
+                            "ts": "yes",
+                            "desc" : "2nd floor"
+                        }
+                    ]
+                },
+                {
+                    "id": "third1",
+                    "floor": "third",
+                    "name": "xuz",
+                    "dept": "Basic Science Deoartment",
+                    "floormap": "url",
+                    "images": [
+                        {
+                            "img" : "/img/adcet/Civil/3rd/1.jpg",
+                            "desc" : "Right side of the floor"
+                        },
+                        {
+                            "img" : "/img/adcet/Civil/3rd/2.jpg",
+                            "desc" : "left side of the floor"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "name": "Main Building (Administrative Office, Mech, Ele, IoT Departments)",
+            "floors": [
+                {
+                    "id": "basement2",
+                    "floor": "basement",
+                    "name": "xuz",
+                    "dept": "Electrical department lab",
+                    "floormap": "url",
+                    "images": [
+                        {
+                            "img" : "/img/adcet/MAIN/base/1.jpg",
+                            "desc" : "Laboratory of Electrical Dept"
+                        }
+                    ]
+                },
+                {
+                    "id": "ground2",
+                    "floor": "ground",
+                    "name": "xuz",
+                    "dept": "Mechanical Engineering and Administritaive office",
+                    "floormap": "url",
+                    "images": [
+                        {
+                            "img" : "/img/adcet/MAIN/ground/admin wing.jpg",
+                            "desc" : "Administrative Office"
+                        },
+                        {
+                            "img" : "/img/adcet/MAIN/ground/mech/1.jpg",
+                            "desc" : "Meechanical Engineering Department"
+                        },
+                        {
+                            "img" : "/img/adcet/MAIN/ground/mech/2.jpg",
+                            "desc" : "Power Engineering Lab (Mech)"
+                        },
+                        {
+                            "img" : "/img/adcet/MAIN/ground/mech/3.jpg",
+                            "desc" : "Power Engineering Lab (Mech)"
+                        }
+                    ]
+                },
+                {
+                    "id": "first2",
+                    "floor": "first",
+                    "name": "xuz",
+                    "dept": "Electrical department and IoT Department",
+                    "floormap": "url",
+                    "images": [
+                        {
+                            "img" : "/img/adcet/MAIN/first/elec/1.jpg",
+                            "desc" : "Electrical Department"
+                        },
+                        {
+                            "img" : "/img/adcet/MAIN/first/iot cyber/1.jpg",
+                            "desc" : "Iot and Cyber Department"
+                        },
+                        {
+                            "img" : "/img/adcet/MAIN/first/elec/2.jpg",
+                            "desc" : "Electrical Department"
+                        }
+                    ]
+                },
+                {
+                    "id": "second2",
+                    "floor": "second",
+                    "name": "xuz",
+                    "dept": "",
+                    "floormap": "url",
+                    "images": [
+                        {
+                            "img" : "/img/adcet/MAIN/second/ad hall/1.jpg",
+                            "desc" : "Auditorium Hall"
+                        },
+                        {
+                            "img" : "/img/adcet/MAIN/second/ad hall/2.jpg",
+                            "desc" : "Auditorium Hall"
+                        },
+                        {
+                            "img" : "/img/adcet/MAIN/second/guest/1.jpg",
+                            "desc" : "Sanstha Ofiice"
+                        },
+                        {
+                            "img" : "/img/adcet/MAIN/second/guest/2.jpg",
+                            "desc" : "Guest rooms"
+                        },
+                        {
+                            "img" : "/img/adcet/MAIN/second/guest/3.jpg",
+                            "desc" : "Sanstha Office Karyalay"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "name": "bulding3 (Agri, TPC, AERO, Food, AI, COE Departments)",
+            "floors": [
+                {
+                    "id": "ground3",
+                    "floor": "ground",
+                    "name": "xuz",
+                    "dept": "Agriculture Engineering",
+                    "floormap": "url",
+                    "images": [
+                        {
+                            "img" : "/img/adcet/AERO/agri/1.jpg",
+                            "desc" : "Department of Agriculture Engineering"
+                        },
+                        {
+                            "img" : "/img/adcet/AERO/agri/tpo.jpg",
+                            "desc" : "Training and Placement Cell"
+                        }
+                    ]
+                },
+                {
+                    "id": "first3",
+                    "floor": "first",
+                    "name": "xuz",
+                    "dept": "AERO Deoartment",
+                    "floormap": "url",
+                    "images": [
+                        {
+                            "img" : "/img/adcet/AERO/aero/1.jpg",
+                            "desc" : "CSE Department"
+                        }
+                    ]
+                },
+                {
+                    "id": "second3",
+                    "floor": "second",
+                    "name": "xuz",
+                    "dept": "Food Technology",
+                    "floormap": "url",
+                    "images": [
+                        {
+                            "img" : "/img/adcet/AERO/food/1.jpg",
+                            "desc" : "Food Dept"
+                        },
+                        {
+                            "img" : "/img/adcet/AERO/food/2.jpg",
+                            "desc" : "Auditorium Hall"
+                        },
+                        {
+                            "img" : "/img/adcet/AERO/food/3.jpg",
+                            "desc" : "2nd floor"
+                        }
+                    ]
+                },
+                {
+                    "id": "third3",
+                    "floor": "third",
+                    "name": "xuz",
+                    "dept": "COE",
+                    "floormap": "url",
+                    "images": [
+                        {
+                            "img" : "/img/adcet/AERO/coe/1.jpg",
+                            "desc" : "COE Office"
+                        },
+                        {
+                            "img" : "/img/adcet/AERO/coe/2.jpg",
+                            "desc" : "Artificial Intelligence Department"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
